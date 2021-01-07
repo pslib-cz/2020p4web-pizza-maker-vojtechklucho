@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route } from "react-router";
+import Ingredients from "./components/Ingredients";
+import Calzone from "./components/Calzone";
+import Pizza from "./components/Pizza";
+import Order from "./components/Order";
+import NotFound from "./components/NotFound";
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+          <h1>Order pizza</h1>
+          <Switch>
+            <Route exact path="/order/pizza" component={Pizza} />
+            <Route exact path="/order/calzone" component={Calzone} />
+            <Route exact path="/ingredients" component={Ingredients} />
+          </Switch>
+      </Router>
     </div>
   );
 }
