@@ -4,7 +4,7 @@ function Home(){
     
     return(
         <div>
-            <h3>Home</h3>
+            <h3>Pizza Maker</h3>
         </div>
     );
 }

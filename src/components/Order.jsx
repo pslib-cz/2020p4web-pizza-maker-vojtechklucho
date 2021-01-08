@@ -13,18 +13,21 @@ import {
 import ChoosenFood from "./ChoosenFood";
 
 function Order(){
+
+    const food = window.location.href === "http://localhost:3000/order/pizza" ? "Pizza" : "Calzone";
+
     return(
         <div>
             <Row>
-                <Col>
-                    
-                </Col>
-                <Col>
-                    <ChoosenFood/>
-                </Col>
-                <Col>
-                    
-                </Col>
+                <Col/>
+                <Col><ChoosenFood food={food}/></Col>
+                <Col/>
+            </Row>
+
+            <Row>
+                <Col/>
+                <Col></Col>
+                <Col/>
             </Row>
         </div>
     );

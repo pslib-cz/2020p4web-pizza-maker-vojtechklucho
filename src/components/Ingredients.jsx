@@ -1,10 +1,14 @@
 import React from 'react';
+import IngredientList from "./IngredientsList";
+import AddIngredient from "./AddIngredient";
 
 function Ingredients(){
-    
+  
+
     return(
-        <div>
-            <p>Ingredients</p>
+        <div> 
+            <AddIngredient/>
+            <IngredientList/>
         </div>
     );
 }
