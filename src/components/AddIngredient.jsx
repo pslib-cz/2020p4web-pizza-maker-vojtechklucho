@@ -11,9 +11,11 @@ function AddIngredient(){
     const [category, setCategory] = useState("");
 
     function handleSubmit(){
-        let newIngredient = {category: category, name: name};
+        let newIngredient = {category: category, name: name, visible: true};
         const newIngredients = [...state.ingredients, newIngredient];
         setState({...state, ingredients: newIngredients})
+        setName("");
+        setCategory("");
     }
 
     return(

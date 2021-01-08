@@ -8,7 +8,10 @@ function IngredientsList(){
 
     function createIngredientsList(){
         return state.ingredients.map ((item, index) =>{
-            return(<Ingredient key={index} ingredient={item}/>);
+            if(item.visible){
+                return(<Ingredient key={index} ingredient={item}/>);
+            }
+            return null;
         })
     }
     return(

@@ -10,6 +10,7 @@ import {
     Col
 } from 'reactstrap';
 
+import IngredientsList from "./IngredientsList";
 import ChoosenFood from "./ChoosenFood";
 
 function Order(){
@@ -26,9 +27,10 @@ function Order(){
 
             <Row>
                 <Col/>
-                <Col></Col>
+                <Col><IngredientsList/></Col>
                 <Col/>
             </Row>
+
         </div>
     );
 }

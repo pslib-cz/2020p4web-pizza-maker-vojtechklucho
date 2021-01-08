@@ -12,18 +12,21 @@ import {StateContext, SetStateContext} from "./providers/Provider";
 
 const initialState = {
   ingredients: [
-    {category: "hnus", name: "ananas"},
-    {category: "hnus", name: "žampiony"},
+    {category: "hnus", name: "ananas", visible: true},
+    {category: "hnus", name: "žampiony", visible: true},
 
-    {category: "salámy", name: "šunka"},
-    {category: "salámy", name: "paprikáš"},
-    {category: "salámy", name: "poličan"},
+    {category: "salámy", name: "šunka", visible: true},
+    {category: "salámy", name: "paprikáš", visible: true},
+    {category: "salámy", name: "poličan", visible: true},
 
-    {category: "základ", name: "sýrový"},
-    {category: "základ", name: "kečupový"},
+    {category: "základ", name: "sýrový", visible: true},
+    {category: "základ", name: "kečupový", visible: true},
 
-    {category: "okraje", name: "klasické"},
-    {category: "okraje", name: "plněné"},
+    {category: "okraje", name: "klasické", visible: true},
+    {category: "okraje", name: "plněné", visible: true},
+
+    {category: "koření", name: "sůl", visible: true},
+    {category: "koření", name: "pepř", visible: true},
   ],
   order:
   {
