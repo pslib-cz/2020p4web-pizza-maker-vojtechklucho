@@ -1,25 +1,26 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { 
     Navbar, 
     Nav, 
     NavItem, 
-    NavbarBrand 
+    NavbarBrand,
+    NavLink 
 } from "reactstrap";
 
-const Navigation = () => {
+function Navigation(){
     return (
         <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">Pizza maker</NavbarBrand>
+            <Link className="navbar-brand" to="/">Pizza maker</Link>
             <Nav>
                 <NavItem>
-                    <NavLink href="/order/pizza">Pizza</NavLink>
+                    <Link className="nav-link" to="/order/pizza">Pizza</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/order/calzone">Calzone</NavLink>
+                    <Link className="nav-link" to="/order/calzone">Calzone</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/ingredients">Ingredients</NavLink>
+                    <Link className="nav-link" to="/ingredients">Ingredients</Link>
                 </NavItem>
             </Nav>
         </Navbar>

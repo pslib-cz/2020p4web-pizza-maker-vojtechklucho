@@ -10,36 +10,20 @@ import {
     Col
 } from 'reactstrap';
 
-import Navigation from "./Navigation";
+import ChoosenFood from "./ChoosenFood";
 
 function Order(){
     return(
         <div>
-            <Navigation />
             <Row>
                 <Col>
-                    <Card>
-                        <CardBody>
-                            <CardTitle tag="h1">Pizza</CardTitle>
-                            <Button>Button</Button>
-                        </CardBody>
-                    </Card>
+                    
                 </Col>
                 <Col>
-                    <Card>
-                        <CardBody>
-                            <CardTitle tag="h1">Calzone</CardTitle>
-                            <Button>Button</Button>
-                        </CardBody>
-                    </Card>
+                    <ChoosenFood/>
                 </Col>
                 <Col>
-                    <Card>
-                        <CardBody>
-                            <CardTitle tag="h1">Ingredients</CardTitle>
-                            <Button>Button</Button>
-                        </CardBody>
-                    </Card>
+                    
                 </Col>
             </Row>
         </div>
